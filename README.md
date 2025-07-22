@@ -15,9 +15,16 @@ git clone https://github.com/SwapnoneelBarua/-Audio-Video-Transcriber-Tool---Whi
 cd WhisperX-Transcriber
 ```
 ### Create Conda Environment
+Using environment.yml:
 ```bash
 conda env create -f environment.yml
 conda activate whisperx_env
+```
+If environment.yml not available, create manually:
+```bash
+conda create -n Whisperx_env python=3.10
+conda activate Whisperx_env
+pip install -r requirements.txt
 ```
 ### Launch App
 ```bash
