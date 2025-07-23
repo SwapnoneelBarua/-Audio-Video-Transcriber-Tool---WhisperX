@@ -43,5 +43,41 @@ streamlit run app.py
 ```bash
 See environment.yml
 ```
+🎉 Major Update – Subtitle Fix + Vegas Pro Integration 🎬
+
+This v2.0 release of the Audio/Video Transcriber Tool using WhisperX brings powerful enhancements for content creators:
+
+✅ Fixed subtitle sync & missing captions issue  
+✅ Tested & verified with **Vegas Pro 14–21** (no plugins needed)  
+✅ Generates synced `.srt`, `.vtt`, `.txt`, `.tsv` subtitle files  
+✅ Multilingual transcription & translation  
+✅ Support for YouTube links and local files  
+✅ Works with OFX-compatible video editors
+
+💡 Uses OpenAI WhisperX + Pyannote for speaker diarization  
+💬 Includes Streamlit UI and CLI options
+
+🎥 Watch the usage tutorial: [YT](https://youtu.be/tFIOVvJdUnA)
+🔉 AI voiceover generated using: [Multimodel-TTS-Synthesizer](https://github.com/SwapnoneelBarua/multimodel-tts-synthesizer)
+
+---
+📦 Installation:
+```bash
+git clone https://github.com/SwapnoneelBarua/-Audio-Video-Transcriber-Tool---WhisperX
+cd WhisperX
+conda env create -f environment.yml
+conda activate whisperx_env
+streamlit run app.py
+```
+### step 2
+```bash
+Just import your audio or video file into Vegas.
+Select the audio track, then run the script. (WhisperX\Video_Subtitle_Script\Whisper Speech To Text.cs)
+You’ll get four options — from fast and draft quality to the highest accuracy, plus a translation mode for multilingual subtitles.
+The script automatically creates all subtitle files —
+.srt, .vtt, .txt, and .tsv — right in the same folder as your media.
+And yes, it inserts them directly into a new track in your video project.
+```
+
 ## 📎 License
 MIT 
